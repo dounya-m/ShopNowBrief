@@ -14,7 +14,7 @@
     <section class="head">
         <div class="discription">
             <h1>Manage Your Stock Now.</h1>
-            <p>our application helpe you to manage your stock easy without
+            <p>our application helpe you tO manage your stock easy without
                 difficult you can control your stock, see your selles, 
                 manages your products and control your employees.  </p>
                 <button type="submit"><a href="login.php"> Get Started</a></button>
