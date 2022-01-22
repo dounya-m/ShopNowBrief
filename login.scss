@@ -1,11 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 $primary-color:#020076;
-$secondary-color: #b3b3b3;
+$secondary-color: #999898;
 $button-color: #2639ED;
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        img{
+            width: 50%;
+        }
+        .left{
+            background: url("background.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 50%;
+            height:49vw;
+            padding: 10%;
+            .flou{
+                backdrop-filter:blur(16px);
+                padding: 20% 20% 29% 20%;
+            p{
+                color: white;
+
+            }
+        }
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+            gap: 30px;
+            img{
+                width: 15%;
+            }
+            .title{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                h1{
+                    font-size: 33px;
+                    color: rgb(73, 73, 73);
+                    letter-spacing: 2px;
+                    font-weight: 500;
+                }
+                h3{
+                    font-size: 16px;
+                    color: $secondary-color;
+                    font-weight: normal;
+                }
+            }
+            .cases{
+                display: flex;
+                flex-direction: column;
+                gap: 2vw;
+                .flex{
+                    display: flex;
+                    flex-direction: column;
+                    width: 400px;
+                    gap: 8px;
+                    color: $secondary-color;
+                    input{
+                        padding: 4%;
+                        border-radius: 5px;
+                        border: #c8c8c8 solid 1px;
+                    }
+                    label{
+                        font-size: 14px;
+                    }
+                    ::placeholder{
+                        font-size: 10px;
+                        color:$secondary-color;
+                    }
+                    a{
+                        text-decoration: none;
+                        font-size: 12px;
+                    }
+                    button{
+                        padding: 4%;
+                        border-radius: 5px;
+                        border: none;
+                        background: $button-color;
+                        color: white;
+                        font-size: 18px;
+                        font-weight: solid;
+                    }
+                }
+                
+            }
+        }
     }
