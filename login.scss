@@ -13,21 +13,26 @@ $button-color: #2639ED;
         display: flex;
         align-items: center;
         img{
-            width: 50%;
+            width: 30%;
         }
         .left{
             background: url("background.jpg");
             background-size: cover;
             background-position: center;
-            width: 50%;
-            height:49vw;
-            padding: 10%;
+            width: 55%;
+            height:48.8vw;
+            padding: 6%;
             .flou{
                 backdrop-filter:blur(16px);
-                padding: 20% 20% 29% 20%;
+                padding: 18% 10% 18% 10%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
             p{
                 color: white;
-
+                font-size: 24px;
+                font-weight: 250 ;
             }
         }
         }
