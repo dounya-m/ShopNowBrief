@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
+  <g class="edit">
+    <rect width="63.218" height="63.218" fill="#ECEFF7" class="Rectangle 32" rx="10"/>
+    <g class="Stockholm-icons / Files / File">
+      <path fill="#020076" d="M23.842 18.965H33.95a1.5 1.5 0 01.969.355l6.274 5.307a1.5 1.5 0 01.531 1.146V41.83c0 2.263-.026 2.423-2.348 2.423H23.842c-2.322 0-2.348-.16-2.348-2.423V21.389c0-2.264.026-2.424 2.348-2.424z" class="Combined Shape" opacity=".3"/>
+      <rect width="11.379" height="1.264" x="25.287" y="37.931" fill="#020076" class="Rectangle" rx=".632"/>
+      <path fill="#020076" d="M37.161 27.73a1.5 1.5 0 010 2.12l-5.843 5.844a1.5 1.5 0 01-1.016.439l-1.8.054a1.5 1.5 0 01-1.544-1.522l.025-1.724a1.5 1.5 0 01.44-1.039l5.895-5.895a1.5 1.5 0 012.121 0l1.722 1.722z" class="Path 11"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$primary-color:#020076;
+$secondary-color: #e7e6e6d8;
+$button-color: #2639ED;
+$soutitre:#7987A5;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    }
+    .h2{
+        color: $soutitre;
+        font-weight: 19px;
+        font-weight: 500;
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        padding: 1%;
+        padding-left: 3%;
+        padding-bottom: 3%;
+        border-bottom: solid 1px $secondary-color;
+        .logo{
+            width: 20%;
+            img{
+                width: 50%;
+            }
+        }
+        .search{
+            width: 60%;
+            display: flex;
+            gap:10px;
+            .searchBar{
+                border: solid $secondary-color 1px;
+                border-radius: 12px;
+                width: 33vw;
+                height: 3vw;
+                padding: 10px;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            button{
+                background: none;
+                border: none;
+            }
+            input{
+                border: none;
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+        .filtre{
+            select{
+                border: solid $secondary-color 1px;
+                border-radius: 12px;
+                width: 13vw;
+                height: 3vw;
+                font-weight: 500;
+                font-size: 16px;
+                color: #999898;
+            }
+        }
+        }
+        .user{
+            width: 25%;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            .notif{
+                display: flex;
+                img{
+                    width: 25px;
+                }
+            }
+            .profil{
+                display: flex;
+                gap: 20px;
+                img{
+                width: 15%;
+                border-radius: 90px;
+                }
+                .information{
+                    h4{
+                        font-size: 16px;
+                        color: $primary-color;
+                    }
+                    p{
+                        font-size: 13px;
+                        color: $soutitre;
+                    }
+                }
+            }
+        }
+    }
+    main{
+        display: flex;
+        .first-part{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:80px;
+            margin-left: 2%;
+            margin: {
+                left:2%;
+            };
+            padding-right: 2%;
+            padding-top: 2%;
+            padding-bottom: 0.9%;
+            border-right: solid 1px $secondary-color ;
+            .icones{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                .icon{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 5px;
+                    .main-icon{
+                        box-shadow: 1px 8px 33px 4px rgba(180, 190, 223, 0.74);
+                    }
+                    p{
+                        font-size: 14px;
+                        color: $soutitre;
+                    }
+                }
+            }
+            button{
+                background-color: $primary-color;
+                color: white;
+                font-size: 16px;
+                padding: 7%;
+                width: 200px;
+                border:none;
+                border-radius: 15px;
+                box-shadow: #cfc8ffa1 0px 18px 0px -9px;
+                margin-top: 40px;
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+        .product ,.brand{
+            display: flex;
+            flex-direction: column;
+            margin-top: 2%;
+            padding: 2%;
+            padding-right: 2%;
+            gap: 20px;
+            a{
+                text-decoration: none;
+            }
+            h2{
+                @extend .h2
+            }
+            .all{
+                display: flex;
+                gap: 20px;
+            .watch{
+                display: flex;
+                flex-direction: column;
+                img{
+                    width: 17vw;
+                    height: 9vw;
+                    object-fit: cover;
+                    border-radius: 15px 15px 0 0;
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: $primary-color;
+                    background-color: $secondary-color;
+                    text-align: center;
+                    padding: 10%;
+                    border-radius: 0 0px 15px 15px;
+                }
+                .brandLogo{
+                    background: rgba(0, 0, 0, 0.459);
+                    position: absolute;
+                }
+            }
+        }
+        }
+    }
+    .last-activ{
+        padding: 2%;
+        border-left: solid 1px $secondary-color ;
+        .categories{
+            display: flex;
+            gap:200px;
+            .icone-activity{
+                display: flex;
+                gap: 10px;
+            }
+            h2{
+                @extend .h2
+            }
+        }
+        .first-activity{
+            margin-top: 30px;
+            display: flex;
+            gap: 70px;
+            align-items: flex-end;
+            img{
+                width: 75px;
+                border-radius: 10px;
+            }
+            h4{
+                font-size: 18px;
+            }
+            p{
+                font-size: 14px;
+                color: $soutitre;
+            }
+        }
+    }
+    .second-part{
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        h2{
+            @extend .h2
+        }
+        .tableau-contain{
+            display: flex;
+            padding-top: 2vw;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 15px;
+        .line{
+            display: flex;
+            align-items: flex-end;
+            gap: 55px;
+            img{
+                width: 55px;
+                border-radius: 15px;
+            }
+            p{
+                margin-right: 96px;
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+}
