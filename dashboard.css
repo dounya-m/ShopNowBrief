@@ -7,7 +7,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-.h2, main .product h2, main .brand h2, .last-activ .categories h2, .second-part h2 {
+.h2, main .product h2, main .brand h2, .last-activ .categories h2, .second-part h2, .tableau h2 {
   color: #7987A5;
   font-weight: 19px;
   font-weight: 500;
@@ -357,5 +357,79 @@ main .product .all .watch .brandLogo, main .brand .all .watch .brandLogo {
   margin-right: 96px;
   font-size: 18px;
   font-weight: 400;
+}
+
+.tableau {
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tableau h5 {
+  font-size: 16px;
+  color: #020076;
+  margin-bottom: 1vw;
+}
+
+.tableau .all-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 6vw;
+}
+
+.tableau .all-input .top, .tableau .all-input .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6vw;
+  padding-left: 3%;
+}
+
+.tableau .all-input .top .lebeles, .tableau .all-input .bottom .lebeles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 80px;
+}
+
+.tableau .all-input .top input, .tableau .all-input .bottom input {
+  width: 22vw;
+  padding: 6%;
+  border-radius: 10px;
+  border: solid 1px #7987A5;
+}
+
+.tableau .all-input .top #file, .tableau .all-input .bottom #file {
+  background-color: white;
+}
+
+.tableau .submit a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.tableau .submit button {
+  padding: 5%;
+  width: 15vw;
+  background-color: #2639ED;
+  border: none;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=dashboard.css.map */

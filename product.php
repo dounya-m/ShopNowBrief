@@ -14,7 +14,7 @@
         </section>
         <section class="search">
             <div class="searchBar">
-            <button type='submit'><img src="/icones/search.svg" alt="serach"></button>
+            <button type='submit'><img src="icones/search.svg" alt="serach"></button>
             <input type="search" id='search' name='search' placeholder='Search Files...'>
             </div>
             <div class="filtre">
@@ -30,7 +30,7 @@
         <section class="user">
             <div class="notif">
             <a href="#" class="notification">
-            <img src="/icones/notification.svg" alt="serch">
+            <img src="icones/notification.svg" alt="serch">
         </a>
         </div>
         <div class="profil">
@@ -47,23 +47,23 @@
         <div class="fix">
         <div class="icones">
             <div class="icon">
-                <a href="dashboard.php"> <img src="/icones/product-icones/dashboard.svg" alt="icones"></a>
+                <a href="dashboard.php"> <img src="icones/product-icones/dashboard.svg" alt="icones"></a>
                 <p>Dashboard</p>
             </div>
             <div class="icon">
-                <a href="product.php"> <img src="/icones/product-icones/products-icones.svg" alt="icones" class='main-icon'></a>
+                <a href="product.php"> <img src="icones/product-icones/products-icones.svg" alt="icones" class='main-icon'></a>
                 <p>All Products</p>
             </div>
             <div class="icon">
-                <a href="#"> <img src="/icones/Add.svg" alt="icones"></a>
+                <a href="addPage.php"> <img src="icones/Add.svg" alt="icones"></a>
                 <p>Add Products</p>
             </div>
             <div class="icon">
-                <a href="#"> <img src="/icones/edit.svg" alt="icones"></a>
+                <a href="#"> <img src="icones/edit.svg" alt="icones"></a>
                 <p>Edit Products</p>
             </div>
             <div class="icon">
-                <a href="#"> <img src="/icones/delet.svg" alt="icones"></a>
+                <a href="#"> <img src="icones/delet.svg" alt="icones"></a>
                 <p>Delet Products</p>
             </div>
         </div>
@@ -85,54 +85,54 @@
             <p class="info">1200MAD</p>
         </div>
         <div class="icon-control">
-            <a href="#"><img src="/Products/manage.svg" alt="icone"></a>
-            <a href="#"><img src="/Products/delet.svg" alt="icone"></a>
+            <a href="#"><img src="Products/manage.svg" alt="icone"></a>
+            <a href="#"><img src="Products/delet.svg" alt="icone"></a>
             </div>
             <!-- fin line -->
             <div class="line">
-            <img src="/Products/image02.jpg" alt="img">
+            <img src="Products/image02.jpg" alt="img">
             <p class="info">Watch name</p>
             <p class="info">13 pièces</p>
             <p class="info">22/01/2022</p>
             <p class="info">1200MAD</p>
         </div>
         <div class="icon-control">
-            <a href="#"><img src="/Products/manage.svg" alt="icone"></a>
-            <a href="#"><img src="/Products/delet.svg" alt="icone"></a>
+            <a href="#"><img src="Products/manage.svg" alt="icone"></a>
+            <a href="#"><img src="Products/delet.svg" alt="icone"></a>
             </div>
             <!-- fin line -->
             <div class="line">
-            <img src="/Products/image05.jpg" alt="img">
+            <img src="Products/image05.jpg" alt="img">
             <p class="info">Watch name</p>
             <p class="info">13 pièces</p>
             <p class="info">22/01/2022</p>
             <p class="info">1200MAD</p>
         </div>
         <div class="icon-control">
-            <a href="#"><img src="/Products/manage.svg" alt="icone"></a>
-            <a href="#"><img src="/Products/delet.svg" alt="icone"></a>
+            <a href="#"><img src="Products/manage.svg" alt="icone"></a>
+            <a href="#"><img src="Products/delet.svg" alt="icone"></a>
             </div>
             <div class="line">
-            <img src="/Products/image07.jpg" alt="img">
+            <img src="Products/image07.jpg" alt="img">
             <p class="info">Watch name</p>
             <p class="info">13 pièces</p>
             <p class="info">22/01/2022</p>
             <p class="info">1200MAD</p>
         </div>
         <div class="icon-control">
-            <a href="#"><img src="/Products/manage.svg" alt="icone"></a>
-            <a href="#"><img src="/Products/delet.svg" alt="icone"></a>
+            <a href="#"><img src="Products/manage.svg" alt="icone"></a>
+            <a href="#"><img src="Products/delet.svg" alt="icone"></a>
             </div>
             <div class="line">
-            <img src="/Products/image10.jpg" alt="img">
+            <img src="Products/image10.jpg" alt="img">
             <p class="info">Watch name</p>
             <p class="info">13 pièces</p>
             <p class="info">22/01/2022</p>
             <p class="info">1200MAD</p>
         </div>
         <div class="icon-control">
-            <a href="#"><img src="/Products/manage.svg" alt="icone"></a>
-            <a href="#"><img src="/Products/delet.svg" alt="icone"></a>
+            <a href="#"><img src="Products/manage.svg" alt="icone"></a>
+            <a href="#"><img src="Products/delet.svg" alt="icone"></a>
             </div>
         </div>
     </section>

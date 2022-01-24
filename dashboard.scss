@@ -254,3 +254,59 @@ $soutitre:#7987A5;
         }
     }
 }
+.tableau{
+    padding: 2%;
+    display: flex;
+    flex-direction: column; 
+    gap: 4vw;
+    align-items: center;
+    h2{
+        @extend .h2
+    }
+    h5{
+        font-size: 16px;
+        color: $primary-color;
+        margin-bottom: 1vw;
+    }
+    .all-input{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6vw;
+    .top,.bottom{
+        display: flex;
+        gap: 6vw;
+        padding:{
+            left: 3%;
+        };
+        .lebeles{
+            display: flex;
+            gap:80px;
+        }
+        input{
+            width: 22vw;
+            padding: 6%;
+            border-radius: 10px;
+            border: solid 1px $soutitre;
+        }
+        #file{
+            background-color: white;
+        }
+    }
+}
+.submit{
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    button{
+        padding: 5%;
+        width: 15vw;
+        background-color: $button-color;
+        border: none;
+        border-radius: 10px;
+    }
+}
+}
