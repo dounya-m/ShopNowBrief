@@ -13,6 +13,14 @@
   font-weight: 500;
 }
 
+.border-style, .last-activ {
+  border-left: solid 1px #e7e6e6d8;
+}
+
+.border-style-right, .second-part {
+  border-right: solid 1px #e7e6e6d8;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -263,7 +271,6 @@ main .product .all .watch .brandLogo, main .brand .all .watch .brandLogo {
 
 .last-activ {
   padding: 2%;
-  border-left: solid 1px #e7e6e6d8;
 }
 
 .last-activ .categories {

@@ -15,6 +15,12 @@ $soutitre:#7987A5;
         font-weight: 19px;
         font-weight: 500;
     }
+    .border-style{
+        border-left:  solid 1px $secondary-color ;
+    }
+    .border-style-right{
+        border-right:solid 1px $secondary-color ;
+    }
     .nav{
         display: flex;
         align-items: center;
@@ -188,7 +194,7 @@ $soutitre:#7987A5;
     }
     .last-activ{
         padding: 2%;
-        border-left: solid 1px $secondary-color ;
+        @extend .border-style;
         .categories{
             display: flex;
             gap:200px;
@@ -219,6 +225,7 @@ $soutitre:#7987A5;
         }
     }
     .second-part{
+        @extend .border-style-right;
         display: flex;
         flex-direction: column;
         padding: 2%;
