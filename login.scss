@@ -87,7 +87,7 @@ $button-color: #2639ED;
                         text-decoration: none;
                         font-size: 12px;
                     }
-                    button{
+                    .submit{
                         padding: 4%;
                         border-radius: 5px;
                         border: none;
@@ -100,4 +100,36 @@ $button-color: #2639ED;
                 
             }
         }
+    }
+    @media screen and (max-width: 600px) and (min-width: 280px) {
+    body{
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 150px;
+        .left{
+            width: 100%;
+            height: 30%;
+            .flou{
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+        .right{
+            img{
+                width: 60%;
+            }
+            .title{
+                h1{
+                    font-size: 28px;
+                }
+                h3{
+                    font-size: 16px;
+                }
+            }
+            .cases{
+                gap: 40px;
+            }
+        }
+    }
     }

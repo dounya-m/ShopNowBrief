@@ -1,3 +1,11 @@
+<?php
+include "db.php";
+
+    $sql="SELECT * FROM product";
+    $req= $conn->prepare($sql);
+    $req->execute();
+    $products = $req->fetchAll();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,66 +84,27 @@
     <div class="criesatego">
         <h2>All Products</h2>
         </div>
-        <div class="tableau-contain">
-        <div class="line">
-            <img src="/Products/image01.jpg" alt="img">
-            <p class="info">Watch name</p>
-            <p class="info">13 pièces</p>
-            <p class="info">22/01/2022</p>
-            <p class="info">1200MAD</p>
-        </div>
-        <div class="icon-control">
-            <a href="#"><img src="Products/manage.svg" alt="icone"></a>
-            <a href="#"><img src="Products/delet.svg" alt="icone"></a>
-            </div>
-            <!-- fin line -->
-            <div class="line">
-            <img src="Products/image02.jpg" alt="img">
-            <p class="info">Watch name</p>
-            <p class="info">13 pièces</p>
-            <p class="info">22/01/2022</p>
-            <p class="info">1200MAD</p>
-        </div>
-        <div class="icon-control">
-            <a href="#"><img src="Products/manage.svg" alt="icone"></a>
-            <a href="#"><img src="Products/delet.svg" alt="icone"></a>
-            </div>
-            <!-- fin line -->
-            <div class="line">
-            <img src="Products/image05.jpg" alt="img">
-            <p class="info">Watch name</p>
-            <p class="info">13 pièces</p>
-            <p class="info">22/01/2022</p>
-            <p class="info">1200MAD</p>
-        </div>
-        <div class="icon-control">
-            <a href="#"><img src="Products/manage.svg" alt="icone"></a>
-            <a href="#"><img src="Products/delet.svg" alt="icone"></a>
-            </div>
-            <div class="line">
-            <img src="Products/image07.jpg" alt="img">
-            <p class="info">Watch name</p>
-            <p class="info">13 pièces</p>
-            <p class="info">22/01/2022</p>
-            <p class="info">1200MAD</p>
-        </div>
-        <div class="icon-control">
-            <a href="#"><img src="Products/manage.svg" alt="icone"></a>
-            <a href="#"><img src="Products/delet.svg" alt="icone"></a>
-            </div>
-            <div class="line">
-            <img src="Products/image10.jpg" alt="img">
-            <p class="info">Watch name</p>
-            <p class="info">13 pièces</p>
-            <p class="info">22/01/2022</p>
-            <p class="info">1200MAD</p>
-        </div>
-        <div class="icon-control">
-            <a href="#"><img src="Products/manage.svg" alt="icone"></a>
-            <a href="#"><img src="Products/delet.svg" alt="icone"></a>
-            </div>
-        </div>
+
+        <table class="tableau-contain">
+            <?php
+            foreach ($products as $product) {
+            ?>
+            
+                <tr class="line">
+                    <td class="info"> <img  class="img" src="./images/<?php echo $product['image'] ?>" alt="img"></td>
+                    <td class="info"><?php echo $product['name']?></td>
+                    <td class="info"><?php echo $product['quantity']?> pièces</td>
+                    <td class="info"><?php echo $product['date']?></td>
+                    <td class="info"><?php echo $product['price']?>MAD</td>
+                    <td class="icon"><a href="edit.php?id=<?php echo $product['id']?> "> <img src="Products/manage.svg" alt="icone"></a></td>
+                    <td class="icon"><a href="proDb.php?id=<?php echo $product['id']?> "> <img src="Products/delet.svg" alt="icone"></a></td>
+                </tr>
+        
+            <?php } ?>
+            
+        </table>
+
     </section>
     </main>
-</body>
+</body> 
 </html>

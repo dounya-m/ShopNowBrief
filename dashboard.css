@@ -267,6 +267,7 @@ main .product .all .watch p, main .brand .all .watch p {
 main .product .all .watch .brandLogo, main .brand .all .watch .brandLogo {
   background: rgba(0, 0, 0, 0.459);
   position: absolute;
+  padding: 2%;
 }
 
 .last-activ {
@@ -345,18 +346,26 @@ main .product .all .watch .brandLogo, main .brand .all .watch .brandLogo {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  gap: 55px;
+  margin-bottom: 2vw;
 }
 
-.second-part .tableau-contain .line img {
-  width: 55px;
+.second-part .tableau-contain .line .img {
+  width: 65px;
+  height: 65px;
   border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.second-part .tableau-contain .line p {
+.second-part .tableau-contain .line .info {
   margin-right: 96px;
   font-size: 18px;
   font-weight: 400;
+  width: 6vw;
+}
+
+.second-part .tableau-contain .line .icon {
+  width: 2vw;
 }
 
 .tableau {
@@ -369,15 +378,18 @@ main .product .all .watch .brandLogo, main .brand .all .watch .brandLogo {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 4vw;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .tableau h5 {
   font-size: 16px;
   color: #020076;
   margin-bottom: 1vw;
+}
+
+.tableau .fil-option select {
+  width: 22vw;
+  padding: 6%;
+  border-radius: 15px;
 }
 
 .tableau .all-input {
@@ -389,6 +401,9 @@ main .product .all .watch .brandLogo, main .brand .all .watch .brandLogo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 6vw;
 }
 
@@ -418,18 +433,149 @@ main .product .all .watch .brandLogo, main .brand .all .watch .brandLogo {
   background-color: white;
 }
 
-.tableau .submit a {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-}
-
 .tableau .submit button {
-  padding: 5%;
+  padding: 8%;
+  color: white;
   width: 15vw;
   background-color: #2639ED;
   border: none;
   border-radius: 10px;
+}
+
+.tableau form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3vw;
+}
+
+@media screen and (max-width: 700px) and (min-width: 280px) {
+  .filtre {
+    display: none;
+  }
+  .nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+  }
+  .nav .logo {
+    width: 60%;
+  }
+  .nav .search .searchBar input {
+    font-size: 12px;
+  }
+  .nav .user {
+    width: 28%;
+    gap: 37%;
+  }
+  .nav .user h4, .nav .user p {
+    display: none;
+  }
+  .nav .user .profil img {
+    width: 90%;
+  }
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main h2 {
+    font-size: 22px;
+    width: 40%;
+  }
+  main .first-part {
+    border-right: none;
+    padding: 5%;
+  }
+  main .first-part .icones {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 60px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .first-part .icones .icon {
+    width: 7%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .first-part button {
+    padding: 4%;
+    width: 148px;
+    margin-top: 20px;
+    margin-left: 34%;
+  }
+  main .product .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .product .all .watch img {
+    height: 34vw;
+    width: 45vw;
+  }
+  main .product .all .watch .brandLogo {
+    background-position: center;
+    padding: 7%;
+  }
+  .second-part .tableau-contain .line .info {
+    margin-right: 43px;
+    font-size: 10px;
+    font-weight: 400;
+    width: 6vw;
+  }
+  .second-part .tableau-contain .line .img {
+    width: 41px;
+    height: 38px;
+    border-radius: 15px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .second-part {
+    padding: 1%;
+    border: none;
+  }
+  .second-part .categories .tableau-contain .line .icon {
+    width: 10%;
+  }
+  .tableau .all-input .top input, .tableau .all-input .bottom input {
+    width: 82vw;
+    padding: 6%;
+  }
+  .tableau .fil-option select {
+    width: 51vw;
+    padding: 6%;
+    border-radius: 10px;
+  }
+  .tableau .all-input .top, .tableau .all-input .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .second-part .tableau-contain .line .icon {
+    width: 9vw;
+  }
 }
 /*# sourceMappingURL=dashboard.css.map */

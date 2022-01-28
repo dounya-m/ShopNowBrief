@@ -406,4 +406,36 @@ footer .footer-contain .footer-right ul a {
   color: white;
   font-size: 22px;
 }
+
+@media screen and (max-width: 600px) and (min-width: 280px) {
+  .square, .cercle {
+    display: none;
+  }
+  .head {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .head img {
+    border-radius: 0px;
+  }
+  .head h1 {
+    font-size: 32px;
+  }
+  .head p {
+    width: 100%;
+    font-size: 16px;
+    color: #b3b3b3;
+    margin: 2px;
+  }
+  .head button {
+    background-color: #2639ED;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 3% 6% 3% 6%;
+  }
+}
 /*# sourceMappingURL=main.css.map */

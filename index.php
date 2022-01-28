@@ -139,7 +139,7 @@
             </diV>
             <div class="style">
             <diV class="right">
-              <div> <input class="mail" type="email" id="email" name="email" placeholder="Enter your email address.."> </div>
+                <div> <input class="mail" type="email" id="email" name="email" placeholder="Enter your email address.."> </div>
                 <div><input type="submit" id="submit" class="submit"  value="Contact Now"></div>
             </diV>
         </div>

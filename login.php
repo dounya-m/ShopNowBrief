@@ -1,3 +1,31 @@
+
+<?php 
+    require('db.php'); 
+    
+    if($_SERVER['REQUEST_METHOD']=='POST'){
+        
+        $admin= $_POST['admin'];
+        $password= $_POST['password'];
+
+        if(!empty($admin) && !empty($password)){
+
+            $sqlAdmin=" SELECT * FROM user where admin like '$admin' and password like '$password' ";
+            $statement=$conn->prepare($sqlAdmin);
+            $statement->execute();
+            if($statement->rowCount()>0){
+                header("location:http://localhost:63342/PhpstormProjects/ShopNowBrief/dashboard.php");
+            }
+
+        }
+
+
+
+    }
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +37,7 @@
     <title>Document</title>
 </head>
 <body>
+
     <section class="left">
         <div class="flou">
         <img src="logoWhite.png" alt="logo">
@@ -27,19 +56,21 @@
         <h1>Login to your account</h1>
         <h3>See the lastest offers or create one</h3>
         </div>
-        <div class="cases">
-        <div class="flex">
-        <label>User Name</label>
-        <input class="mail" type="email" id="mail" name="mail" placeholder="admin..">
-        </div>
-        <div class="flex">
-        <label>Password</label>
-        <input class="mail" type="password" id="password" name="password" placeholder="*****************">
-        <a href="#">Forgot your password?</a>
-        </div>
-        <div class="flex">
-			<button>Login</button>
-        </div>
+        <form action="" method="post"> 
+                <div class="cases">
+                <div class="flex">
+                <label for="name">User Name</label>
+                <input class="mail" type="text" id="mail" name="admin" require placeholder="admin..">
+                </div>
+                <div class="flex">
+                <label for="passwword">Password</label>
+                <input class="mail" type="password" id="password" name="password" require placeholder="*****************">
+                <a href="#">Forgot your password?</a>
+                </div>
+                <div class="flex">
+                    <input class="submit" type="submit" name="sub" value="login" >
+                </div>
+        </form>
     </section>
 </body>
 </html>

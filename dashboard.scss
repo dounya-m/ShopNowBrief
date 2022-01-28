@@ -187,6 +187,8 @@ $soutitre:#7987A5;
                 .brandLogo{
                     background: rgba(0, 0, 0, 0.459);
                     position: absolute;
+                    padding: 2%;
+                        
                 }
             }
         }
@@ -241,15 +243,22 @@ $soutitre:#7987A5;
         .line{
             display: flex;
             align-items: flex-end;
-            gap: 55px;
-            img{
-                width: 55px;
+            margin-bottom: 2vw;
+            
+            .img{
+                width: 65px;
+                height: 65px;
                 border-radius: 15px;
+                object-fit: cover;
             }
-            p{
+            .info{
                 margin-right: 96px;
                 font-size: 18px;
                 font-weight: 400;
+                width: 6vw;
+            }
+            .icon{
+                width: 2vw;
             }
         }
     }
@@ -259,7 +268,6 @@ $soutitre:#7987A5;
     display: flex;
     flex-direction: column; 
     gap: 4vw;
-    align-items: center;
     h2{
         @extend .h2
     }
@@ -268,15 +276,23 @@ $soutitre:#7987A5;
         color: $primary-color;
         margin-bottom: 1vw;
     }
+    .fil-option{
+        select{
+            width: 22vw;
+            padding: 6%;
+            border-radius: 15px;
+            }
+    }
     .all-input{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         gap: 6vw;
     .top,.bottom{
         display: flex;
         gap: 6vw;
-        padding:{
+        padding: {
             left: 3%;
         };
         .lebeles{
@@ -292,21 +308,131 @@ $soutitre:#7987A5;
         #file{
             background-color: white;
         }
+        }
     }
-}
 .submit{
-    a{
-        text-decoration: none;
-        color: white;
-        font-size: 16px;
-        font-weight: 600;
-    }
     button{
-        padding: 5%;
+        padding: 8%;
+        color: white;
         width: 15vw;
         background-color: $button-color;
         border: none;
         border-radius: 10px;
     }
 }
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
 }
+}
+@media screen and (max-width: 700px) and (min-width: 280px) {
+.filtre{
+    display: none;
+}
+.nav{
+    flex-wrap: wrap;
+    gap: 10px;
+    .logo {
+        width: 60%;
+    }
+    .search .searchBar input{
+        font-size: 12px;
+    }
+    .user{
+        width: 28%;
+        gap: 37%;
+        h4 ,p{
+            display: none;
+        }
+        .profil img{
+            width: 90%;
+        }
+    }
+}
+main{
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-size: 22px;
+        width: 40%;
+    }
+    .first-part{
+        border-right: none;
+        padding: 5%;
+        .icones{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 60px;
+        justify-content: center;
+        .icon{
+            width: 7%;
+            align-items: center;
+        }
+        }
+        button{
+    padding: 4%;
+    width: 148px;
+    margin-top: 20px;
+    margin-left: 34%;
+        }
+    }
+    .product{
+            .all{
+                display: flex;
+                flex-direction: column;
+            .watch{
+                img{
+                    height: 34vw;
+                    width: 45vw;
+                }
+                .brandLogo{
+                    background-position: center;
+                    padding: 7%;
+                }
+            }
+        }
+    }
+}
+.second-part .tableau-contain .line .info {
+    margin-right: 43px;
+    font-size: 10px;
+    font-weight: 400;
+    width: 6vw;
+}
+.second-part .tableau-contain .line .img {
+    width: 41px;
+    height: 38px;
+    border-radius: 15px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.second-part{
+    padding: 1%;
+    border: none;
+    .categories{
+        .tableau-contain{
+            .line .icon {
+                width: 10%;
+            }
+        }
+    }
+}
+.tableau .all-input .top input, .tableau .all-input .bottom input{
+    width: 82vw;
+    padding: 6%;
+}
+.tableau .fil-option select {
+    width: 51vw;
+    padding: 6%;
+    border-radius: 10px;
+}
+.tableau .all-input .top, .tableau .all-input .bottom {
+    flex-direction: column;
+}
+.second-part .tableau-contain .line .icon {
+    width: 9vw;
+}
+}
+

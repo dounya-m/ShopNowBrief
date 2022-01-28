@@ -329,3 +329,33 @@ $button-color: #2639ED;
             }
         }
     }
+    @media screen and (max-width: 600px) and (min-width: 280px){
+        .square , .cercle{
+            display: none;
+        }
+
+        .head{
+            flex-direction: column-reverse;
+            img{
+                border-radius: 0px;
+            }
+                h1{
+                    font-size: 32px;
+                }
+                p{
+                    width: 100%;
+                    font-size: 16px;
+                    color: $secondary-color;
+                    margin: 2px
+                }
+                button{
+                    background-color: $button-color;
+                    color: white;
+                    font-size: 20px;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 3% 6% 3% 6%;
+                
+        }
+    }
+}
