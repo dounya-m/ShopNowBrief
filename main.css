@@ -407,7 +407,15 @@ footer .footer-contain .footer-right ul a {
   font-size: 22px;
 }
 
-@media screen and (max-width: 600px) and (min-width: 280px) {
+@media screen and (max-width: 900px) and (min-width: 280px) {
+  h3 {
+    font-size: 22px !important;
+    text-align: center !important;
+  }
+  p {
+    font-size: 16px !important;
+    text-align: center !important;
+  }
   .square, .cercle {
     display: none;
   }
@@ -416,26 +424,167 @@ footer .footer-contain .footer-right ul a {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    margin: 0% !important;
+    width: 100%;
+  }
+  .head .discription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
   }
   .head img {
+    width: 85%;
     border-radius: 0px;
   }
   .head h1 {
     font-size: 32px;
   }
   .head p {
-    width: 100%;
+    width: 80%;
     font-size: 16px;
     color: #b3b3b3;
     margin: 2px;
   }
-  .head button {
+  .head .discription {
+    text-align: center;
+  }
+  .head .discription h1 {
+    font-size: 22px;
+  }
+  .head .discription p {
+    font-size: 16px;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+  .head .discription button {
     background-color: #2639ED;
     color: white;
     font-size: 20px;
     border: none;
     border-radius: 10px;
     padding: 3% 6% 3% 6%;
+  }
+  .head .discription a {
+    font-size: 14px;
+  }
+  .horizontal {
+    display: none;
+  }
+  .first {
+    gap: 7vw;
+  }
+  .first .icones .iconify {
+    width: 13vw;
+    height: 13vw;
+    padding: 8%;
+  }
+  .second .midlle {
+    gap: 10vw;
+    background: none;
+  }
+  .second .midlle h4 {
+    font-size: 16px;
+  }
+  .second .midlle p {
+    font-size: 15px;
+  }
+  .second .first-line, .second .second-line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10vw;
+  }
+  .second .first-line .blue, .second .first-line .pink, .second .first-line .orange, .second .first-line .green, .second .second-line .blue, .second .second-line .pink, .second .second-line .orange, .second .second-line .green {
+    width: 59vw;
+  }
+  .second .first-line .blue .iconify, .second .first-line .pink .iconify, .second .first-line .orange .iconify, .second .first-line .green .iconify, .second .second-line .blue .iconify, .second .second-line .pink .iconify, .second .second-line .orange .iconify, .second .second-line .green .iconify {
+    width: 19vw;
+    height: 19vw;
+    padding: 8%;
+  }
+  .how-work {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 7vw;
+  }
+  .how-work p {
+    margin-left: 5vw;
+    width: 86vw;
+    text-align: center;
+    font-size: 14px !important;
+  }
+  .how-work img {
+    width: 80vw;
+  }
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 7vw;
+    padding-left: 0% !important;
+    margin: 0% !important;
+    margin-bottom: 9% !important;
+    background: none;
+  }
+  .contacts .style {
+    padding-left: 3%;
+    padding-right: 0% !important;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    border-radius: 50px !important;
+  }
+  .contacts .right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 60% !important;
+    gap: 0% !important;
+    border-radius: 40px !important;
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+  }
+  .contacts .right .mail {
+    padding-right: 50vw !important;
+    border-radius: 10px !important;
+    padding-left: 90%;
+  }
+  footer .footer-contain .footer-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer-contain .footer-left img {
+    width: 40%;
+  }
+  footer .footer-contain .footer-left p {
+    font-size: 12px !important;
+    width: 90% !important;
+  }
+  footer .footer-contain .footer-right {
+    display: none;
+  }
+  .blue-square {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

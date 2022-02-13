@@ -164,7 +164,7 @@ body .right .cases .flex .submit {
   font-weight: solid;
 }
 
-@media screen and (max-width: 600px) and (min-width: 280px) {
+@media screen and (max-width: 900px) and (min-width: 280px) {
   body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

@@ -329,33 +329,174 @@ $button-color: #2639ED;
             }
         }
     }
-    @media screen and (max-width: 600px) and (min-width: 280px){
+
+
+
+
+
+
+    @media screen and (max-width: 900px) and (min-width: 280px){
+
+        h3{
+            font-size: 22px !important;
+            text-align: center !important;
+        }
+        p{
+            font-size: 16px !important;
+            text-align: center !important;
+        }
         .square , .cercle{
             display: none;
         }
-
         .head{
             flex-direction: column-reverse;
+            margin: 0% !important;
+            width: 100%;
+            .discription{
+                display: flex;
+                flex-direction: column;
+                align-items: center;            
+                width: 100%;
+            }
             img{
+                width: 85%;
                 border-radius: 0px;
             }
                 h1{
                     font-size: 32px;
                 }
                 p{
-                    width: 100%;
+                    width: 80%;
                     font-size: 16px;
                     color: $secondary-color;
                     margin: 2px
                 }
-                button{
-                    background-color: $button-color;
-                    color: white;
-                    font-size: 20px;
-                    border: none;
-                    border-radius: 10px;
-                    padding: 3% 6% 3% 6%;
-                
+                .discription{
+                    text-align: center;
+                    h1{
+                        font-size: 22px;
+                    }
+                    p{
+                        font-size: 16px;
+                        margin: {
+                            top: 3vw;
+                            bottom: 3vw;
+                        };
+                    }
+                    button{
+                        background-color: $button-color;
+                        color: white;
+                        font-size: 20px;
+                        border: none;
+                        border-radius: 10px;
+                        padding: 3% 6% 3% 6%;
+            }
+            a{
+                font-size: 14px
+            }
+                }
+    }
+    .horizontal{
+        display: none;
+    }
+    .first{
+        gap: 7vw;
+        .icones{
+            .iconify{
+                width: 13vw;
+                height: 13vw;
+                padding: 8%;
+            }
         }
+    }
+    .second{
+        .midlle{
+            gap: 10vw;
+            background: none;
+            h4{
+                font-size: 16px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        .first-line,.second-line{
+            flex-direction: column;
+            gap: 10vw;
+            .blue,.pink,.orange,.green{
+                width: 59vw;
+                .iconify{
+                    width: 19vw;
+                    height: 19vw;
+                    padding: 8%;
+                }
+            }
+        }
+    }
+    .how-work{
+        flex-direction: column-reverse;
+        gap: 7vw;
+        p{
+            margin-left: 5vw;
+            width: 86vw;
+            text-align: center;
+            font-size: 14px !important;
+        }
+        img{
+            width: 80vw;
+        }
+    }
+    .contacts{
+        flex-direction: column;
+        gap: 7vw;
+        padding-left: 0% !important;
+        margin: 0% !important;
+        margin-bottom: 9% !important;
+        background: none;
+        .style{
+            padding:{
+                left: 3%;
+                right: 0% !important;
+                bottom: 3%;
+                top: 3%;
+            };
+            border-radius: 50px !important;
+        }
+        .right{
+            flex-direction: column;
+            width: 60% !important;
+            gap: 0% !important;
+            border-radius: 40px !important;
+            padding-left: 3% !important;
+            padding-right: 3% !important;
+            .mail{
+                padding-right: 50vw !important;
+                border-radius: 10px !important;
+                padding-left: 90%;
+
+            }
+        }
+    }
+    footer{
+        .footer-contain{
+            .footer-left{     
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 40%;
+                }
+                p{
+                    font-size: 12px !important;
+                    width: 90% !important;
+                }
+            }
+            .footer-right{
+                display: none;
+            }
+        }
+    }
+    .blue-square{
+        display: none;
     }
 }
