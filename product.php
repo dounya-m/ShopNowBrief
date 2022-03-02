@@ -5,7 +5,29 @@ include "db.php";
     $req= $conn->prepare($sql);
     $req->execute();
     $products = $req->fetchAll();
+    
 ?>
+
+<?php
+include "db.php";
+
+if (isset($_POST['find'])){
+
+    $str = $_POST["search"];
+    $query= " SELECT * FROM product WHERE name = $str ";
+    $sth = $conn-> prepare($query);
+    $sth-> execute();
+    $sth-> fetchAll();
+
+
+    if($row = $sth->fetch()){
+
+        echo "run";
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,10 +44,13 @@ include "db.php";
         </section>
         <section class="search">
             <div class="searchBar">
-            <button type='submit'><img src="icones/search.svg" alt="serach"></button>
+                <form action="" method="post">
+            <button type='submit' name= 'find'><img src="icones/search.svg" alt="serach"></button>
             <input type="search" id='search' name='search' placeholder='Search Files...'>
+            </form>
             </div>
             <div class="filtre">
+                <form action="">
                 <select name="types" id="types">
                     <option value="filter">Filter</option>
                     <option value="man">Man Watches</option>
@@ -33,6 +58,7 @@ include "db.php";
                     <option value="smart">Smartwatch</option>
                     <option value="bran">Brands</option>
                 </select>
+                </form>
             </div>
         </section>
         <section class="user">

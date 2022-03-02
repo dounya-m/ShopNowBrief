@@ -11,6 +11,9 @@
     <header class="logo">
         <img src="logo.png" alt="Logo">
     </header>
+
+    <div id="prealoder"></div>
+
     <section class="head">
         <div class="discription">
             <h1>Manage Your Stock Now.</h1>
@@ -165,5 +168,15 @@
     </footer>
 
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+    <script>
+        var loader = document.getElementById("prealoder");
+
+        window.addEventListener("load",function(){
+
+            loader.style.display = "none";
+        }) 
+
+    </script>
 </body>
 </html>

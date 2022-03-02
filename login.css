@@ -68,7 +68,7 @@ body .right {
 }
 
 body .right img {
-  width: 15%;
+  width: 25%;
 }
 
 body .right .title {
@@ -177,6 +177,9 @@ body .right .cases .flex .submit {
     width: 100%;
     height: 30%;
   }
+  body .left img {
+    width: 50%;
+  }
   body .left .flou p {
     font-size: 18px;
   }
@@ -191,6 +194,29 @@ body .right .cases .flex .submit {
   }
   body .right .cases {
     gap: 40px;
+  }
+}
+
+@media screen and (max-width: 1480px) and (min-width: 901px) {
+  body .left .flou {
+    height: 39vw;
+    overflow: hidden;
+    padding-top: 4vw;
+  }
+  body .left .flou p {
+    font-size: 18px;
+    font-weight: 250;
+    width: 30vw;
+    margin-bottom: 2vw;
+  }
+  body .right img {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 901px) {
+  body .right .title h1 {
+    font-size: 24px;
   }
 }
 /*# sourceMappingURL=login.css.map */

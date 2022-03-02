@@ -9,6 +9,16 @@ $button-color: #2639ED;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     }
+
+    #prealoder{
+        background: rgb(255, 255, 255) url(/icones/Facebook-Loading-Icons-1.gif) no-repeat;
+        background-position: top ;
+        width: 100%;
+        height: 100vw;
+        position: fixed;
+        z-index: 100;
+    }
+
     .title{
         margin-top: 9%;
         text-align: center;
@@ -72,7 +82,7 @@ $button-color: #2639ED;
             border-radius: 0 0 0120px;
             background: #FFF5DB;
             position: absolute;
-            top: 66%;
+            top: 30vw;
             left: 85%;
             z-index: -1;
         }
@@ -307,7 +317,7 @@ $button-color: #2639ED;
             align-items: center;
             .footer-left{
                 img{
-                    width: 10%;
+                    width: 13vw;
                 }
                 p{
                     font-size: 24px;
@@ -360,7 +370,9 @@ $button-color: #2639ED;
             }
             img{
                 width: 85%;
-                border-radius: 0px;
+                border-radius: 12px;
+                margin-left: 8%;
+                margin-right: 8%;
             }
                 h1{
                     font-size: 32px;
@@ -423,6 +435,10 @@ $button-color: #2639ED;
         .first-line,.second-line{
             flex-direction: column;
             gap: 10vw;
+            margin: {
+                left: 10vw;
+                right: 10vw;
+            };
             .blue,.pink,.orange,.green{
                 width: 59vw;
                 .iconify{
@@ -484,10 +500,10 @@ $button-color: #2639ED;
                 flex-direction: column;
                 align-items: center;
                 img{
-                    width: 40%;
+                    width: 25%;
                 }
                 p{
-                    font-size: 12px !important;
+                    font-size: 16px !important;
                     width: 90% !important;
                 }
             }
@@ -500,3 +516,123 @@ $button-color: #2639ED;
         display: none;
     }
 }
+@media screen and (max-width: 1350px) and (min-width: 1191px){
+    
+    h3{
+        font-size: 32px !important;
+    }
+    p{
+        font-size: 18px !important;
+    }
+    .images img {
+        border-radius: 0 0 0 150px;
+        width: 40vw;
+    }
+    .images .square {
+        width: 168px;
+        height: 132px;
+        top: 35vw;
+    }
+    .main-box, .midlle .blue, .midlle .pink, .midlle .green, .midlle .orange{
+        width: 30%;
+    }
+    .midlle .first-line, .midlle .second-line{
+        gap: 10vw;
+        padding: 2vw;
+    }
+    .how-work img{
+        width: 40vw;
+    }
+    .text-discription{
+        margin-left: 3vw;
+    }
+    .how-work .yellow-cercle{
+        left: 42%;
+        top: 335%;
+    }
+    .how-work .blue-square{
+        width: 13%;
+        height: 19%;
+        left: 85%;
+        top: 338%;
+    }
+    footer .footer-contain .footer-left img  {
+        width: 13vw;
+    }
+    footer .footer-contain .footer-left img {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1190px) and (min-width: 901px){
+
+    h3{
+        font-size: 28px !important;
+    }
+    p{
+        font-size: 18px !important;
+    }
+    .discription h1 {
+        font-size: 42px;
+    }
+    .images img {
+        border-radius: 0 0 0 140px;
+        width: 45vw;
+    }
+    .images .square {
+        border-radius: 0 0 120px;
+        top: 29vw;
+        left: 77%;
+    }
+    .images .cercle{
+        left: 49%;
+    }
+    .midlle h4 {
+        font-size: 16px;
+    }
+    .main-box, .midlle .blue, .midlle .pink, .midlle .green, .midlle .orange{
+        width: 33%;
+    }
+    .midlle .first-line, .midlle .second-line {
+        gap: 15%;
+}
+.midlle {
+    padding: 3vw;
+}
+.midlle .first-line{
+    margin-bottom: 2vw;
+}
+.how-work img {
+    width: 37vw;
+}
+.how-work{
+    gap: 4vw;
+}
+.how-work .blue-square {
+    width: 146px;
+    height: 148px;
+    border-radius: 0 0 72px 0;
+    left: 80%;
+    top: 300%;
+}
+.how-work .yellow-cercle{
+    top: 310px;
+}
+footer .footer-contain .footer-right ul a {
+    font-size: 16px;
+}
+.contacts .left {
+    h3{
+        font-size: 18px !important;
+    }
+    p{
+        font-size: 14px !important;
+    }
+}
+}
+@media screen and (max-width: 900px) and (min-width: 701px){
+    .second .first-line, .second .second-line{
+        flex-direction: row;
+        margin: 0;
+    }
+}
+
