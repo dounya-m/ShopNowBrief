@@ -42,6 +42,13 @@ $button-color: #2639ED;
             align-items: center;
             width: 60%;
             gap: 30px;
+            .close{
+                border: none;
+                background: none;
+                width: 10vw;
+                align-self: flex-end;
+                padding-bottom: 9vw;
+            }
             img{
                 width: 25%;
             }
@@ -100,6 +107,14 @@ $button-color: #2639ED;
                 
             }
         }
+    }
+    #prealoder{
+        background: rgb(255, 255, 255) url(/icones/Facebook-Loading-Icons-1.gif) no-repeat;
+        background-position: top ;
+        width: 100%;
+        height: 50vw;
+        position: fixed;
+        z-index: 100;
     }
     @media screen and (max-width: 900px) and (min-width: 280px) {
     body{

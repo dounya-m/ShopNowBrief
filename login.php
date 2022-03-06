@@ -20,7 +20,7 @@
     <title>Document</title>
 </head>
 <body>
-
+<div id="prealoder"></div>
     <section class="left">
         <div class="flou">
         <img src="logoWhite.png" alt="logo">
@@ -34,6 +34,10 @@
             </div>
     </section>
     <section class="right">
+        <button class="close">
+            <a href="http://localhost:63342/index.php?_ijt=hk7n46p3h8tj81d07lfaru42uo&_ij_reload=RELOAD_ON_SAVE">
+                <img src="/icones/index.svg" alt="">
+            </a></button>
         <img src="logo.png" alt="logo">
         <div class="title">
         <h1>Login to your account</h1>
@@ -55,5 +59,18 @@
                 </div>
         </form>
     </section>
+
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+    <script>
+        var loader = document.getElementById("prealoder");
+
+        window.addEventListener("load",function(){
+
+            loader.style.display = "none";
+        }) 
+
+    </script>
+
 </body>
 </html>

@@ -67,6 +67,15 @@ body .right {
   gap: 30px;
 }
 
+body .right .close {
+  border: none;
+  background: none;
+  width: 10vw;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-bottom: 9vw;
+}
+
 body .right img {
   width: 25%;
 }
@@ -162,6 +171,15 @@ body .right .cases .flex .submit {
   color: white;
   font-size: 18px;
   font-weight: solid;
+}
+
+#prealoder {
+  background: white url(/icones/Facebook-Loading-Icons-1.gif) no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 50vw;
+  position: fixed;
+  z-index: 100;
 }
 
 @media screen and (max-width: 900px) and (min-width: 280px) {

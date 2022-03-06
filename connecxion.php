@@ -31,6 +31,9 @@
                 $url = "http://localhost:63342/index.php/login.php?_ijt=hk7n46p3h8tj81d07lfaru42uo&_ij_reload=RELOAD_ON_SAVE";
                 header("Location: $url"); 
             }
+        }else{
+            $url = "http://localhost:63342/index.php/login.php?_ijt=hk7n46p3h8tj81d07lfaru42uo&_ij_reload=RELOAD_ON_SAVE";
+            header("Location: $url"); 
         }
 
 
