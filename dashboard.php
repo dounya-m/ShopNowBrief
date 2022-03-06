@@ -1,3 +1,21 @@
+<?php
+
+require "db.php";
+
+$sql = "SELECT * FROM product ORDER BY id DESC LIMIT 3" ;
+$req= $conn->prepare($sql);
+$req->execute();
+$prod = $req->fetchAll();
+?>
+
+<?php
+session_start();
+
+require_once "check.php"
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,7 +87,7 @@
             </div>
         </div>
         <div class="sign-out">
-            <button type='submit'><a href="index.php"> Sign out</a></button>
+            <button type='submit'><a href="dexonexion.php"> Sign out</a></button>
         </div>
         </div>
     </section>
@@ -119,34 +137,25 @@
     <section class="last-activ">
     <div class="categories">
         <div><h2>Last Activity</h2></div>
-        <div class="icone-activity">
-            <a href="#"><img src="icones/settings.svg" alt="param"></a>
-            <a href="#"><img src="icones/add2.svg" alt="add"></a>
-        </div>
         </div>
         <div class="activity">
+
+            <?php
+            foreach ($prod as $product) {
+            ?>
             <div class="first-activity">
-            <div class="product-img"><img src="images/stock.jpg" alt="image"></div>
+            <div class="product-img"><img  class="img" src="./images/<?php echo $product['image'] ?>" alt="img"></div>
             <div class="categorie">
                 <h4>Categorie</h4>
-                <p>Watche name</p>
+                <p><?php echo $product['name']?></p>
             </div>
             <div class="prix">
                 <h4>Prix</h4>
-                <p>1400dh</p>
+                <p><?php echo $product['price']?>MAD</p>
             </div>
             </div>
-            <div class="first-activity">
-            <div class="product-img"><img src="images/stock02.jpg" alt="image"></div>
-            <div class="categorie">
-                <h4>Categorie</h4>
-                <p>Watche name</p>
-            </div>
-            <div class="prix">
-                <h4>Prix</h4>
-                <p>1200dh</p>
-            </div>
-            </div>
+            <?php } ?>
+
         </div>
     </section>
     </main>

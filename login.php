@@ -2,30 +2,10 @@
 <?php 
     require('db.php'); 
     
-    if($_SERVER['REQUEST_METHOD']=='POST'){
-        
-        $admin= $_POST['admin'];
-        $password= $_POST['password'];
 
-        if(!empty($admin) && !empty($password)){
-
-            $sqlAdmin=" SELECT * FROM user where admin like '$admin' and password like '$password' ";
-            $statement = $conn->prepare($sqlAdmin);
-            $statement->execute();
-            if($statement->rowCount()>0){
-
-                $url = "http://localhost:63342/index.php/dashboard.php?_ijt=hk7n46p3h8tj81d07lfaru42uo&_ij_reload=RELOAD_ON_SAVE";
-                header("Location: $url");  
-                // header("location:http://localhost:63342/PhpstormProjects/ShopNowBrief/dashboard.php");
-                // header("location:http://localhost:63342/index.php/dashboard.php?_ijt=hk7n46p3h8tj81d07lfaru42uo&_ij_reload=RELOAD_ON_SAVE");
-            }
-        }
-
-
-
-    }
 
 ?>
+
 
 
 
@@ -59,7 +39,7 @@
         <h1>Login to your account</h1>
         <h3>See the lastest offers or create one</h3>
         </div>
-        <form action="" method="post"> 
+        <form action="connecxion.php" method="post"> 
                 <div class="cases">
                 <div class="flex">
                 <label for="name">User Name</label>
